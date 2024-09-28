@@ -1,0 +1,55 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-roboto">
+    <div class="container mx-auto p-8">
+        <a href="http://127.0.0.1:5500/profil.html" class="text-red-500 text-sm font-bold mb-4 inline-block transition-opacity duration-1000 opacity-0 animate-fadeIn">
+            &larr; PROFIL
+        </a>
+        <h1 class="text-4xl font-bold text-gray-900 mb-8 max-w-3xl mx-auto leading-tight transition-opacity duration-1000 opacity-0 animate-fadeIn">
+            Visi dan Misi Pemerintah Kabupaten Demak
+        </h1>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 max-w-2xl mx-auto transition-transform duration-1000 transform opacity-0 animate-slideInUp">
+            <h2 class="text-red-500 text-sm font-bold mb-2">VISI</h2>
+            <p class="text-gray-900 text-lg font-semibold leading-relaxed">
+                Demak bermartabat, maju dan sejahtera
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto transition-transform duration-1000 transform opacity-0 animate-slideInUp">
+            <h2 class="text-red-500 text-sm font-bold mb-4">MISI</h2>
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <div class="text-red-500 text-2xl font-bold mr-4">1</div>
+                    <p class="text-gray-900 leading-relaxed">
+                        Memperkuat tata kelola pemerintahan yang baik, serta kehidupan bermasyarakat yang agamis, kondusif dan berbudaya.
+                    </p>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-red-500 text-2xl font-bold mr-4">2</div>
+                    <p class="text-gray-900 leading-relaxed">
+                        Meningkatkan sumber daya manusia, sumber daya alam dan lingkungan hidup yang berkualitas dan berdaya saing.
+                    </p>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-red-500 text-2xl font-bold mr-4">3</div>
+                    <p class="text-gray-900 leading-relaxed">
+                        Mendorong pertumbuhan ekonomi berbasis potensi lokal, membuka lapangan kerja, mengurangi kemiskinan dan pengangguran.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Adding a slight delay to make the elements visible
+        document.querySelectorAll('.animate-fadeIn, .animate-slideInUp').forEach((el, index) => {
+            setTimeout(() => {
+                el.classList.remove('opacity-0', 'transform');
+            }, index * 200);
+        });
+    </script>
+</body>
+</html>
